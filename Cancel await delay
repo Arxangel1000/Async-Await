@@ -1,0 +1,4 @@
+private CancellationTokenSource _token = new CancellationTokenSource();
+await Task.Delay(TimeSpan.FromSeconds(5f), _token.Token);
+
+// You can stop this construction by _token.Cancel();
