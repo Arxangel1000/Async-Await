@@ -1,0 +1,9 @@
+private CancellationTokenSource _tokenForMethod = new CancellationTokenSource();
+
+private void Method(CancellationToken _tokenForMethod.Token)
+{
+  tokenAll.ThrowIfCancellationRequested();
+
+  // If you write this thing in the method after tokenForMethod.Cancel(),
+   the execution of the method will stop, it works like try / catch
+}
